@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "0ZKswmahIc/nGDtBKZfXJUL12h1UMVoObOHlh+BeAIX7aNX0c7UHApuE9MWmWe9kBW8M/U3FWNZoqepLO20cmg==",
+  "dgSpecHash": "3f+OLd8wsZTfofd/e3wSDYnASOaRoBr5dC3/Z28Q4mAUPLuFq3zddjZy/ib3+uFyDG8PifMhq3AsbTj0JIkdBQ==",
   "success": true,
   "projectFilePath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.CrossCutting.Bus\\App.Infra.CrossCutting.Bus.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Anibal Yañez\\.nuget\\packages\\ardalis.smartenum\\2.1.0\\ardalis.smartenum.2.1.0.nupkg.sha512",
+    "C:\\Users\\Anibal Yañez\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\Anibal Yañez\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\Anibal Yañez\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Anibal Yañez\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

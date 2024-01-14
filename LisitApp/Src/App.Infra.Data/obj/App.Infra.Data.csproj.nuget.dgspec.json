@@ -4,14 +4,14 @@
     "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.Data\\App.Infra.Data.csproj": {}
   },
   "projects": {
-    "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.Data\\App.Infra.Data.csproj": {
+    "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain.Core\\App.Domain.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.Data\\App.Infra.Data.csproj",
-        "projectName": "App.Infra.Data",
-        "projectPath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.Data\\App.Infra.Data.csproj",
+        "projectUniqueName": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain.Core\\App.Domain.Core.csproj",
+        "projectName": "App.Domain.Core",
+        "projectPath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain.Core\\App.Domain.Core.csproj",
         "packagesPath": "C:\\Users\\Anibal Yañez\\.nuget\\packages\\",
-        "outputPath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.Data\\obj\\",
+        "outputPath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anibal Yañez\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,233 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Ardalis.SmartEnum": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain\\App.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain\\App.Domain.csproj",
+        "projectName": "App.Domain",
+        "projectPath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain\\App.Domain.csproj",
+        "packagesPath": "C:\\Users\\Anibal Yañez\\.nuget\\packages\\",
+        "outputPath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Anibal Yañez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain.Core\\App.Domain.Core.csproj": {
+                "projectPath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain.Core\\App.Domain.Core.csproj"
+              },
+              "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.CrossCutting.Bus\\App.Infra.CrossCutting.Bus.csproj": {
+                "projectPath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.CrossCutting.Bus\\App.Infra.CrossCutting.Bus.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.CrossCutting.Bus\\App.Infra.CrossCutting.Bus.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.CrossCutting.Bus\\App.Infra.CrossCutting.Bus.csproj",
+        "projectName": "App.Infra.CrossCutting.Bus",
+        "projectPath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.CrossCutting.Bus\\App.Infra.CrossCutting.Bus.csproj",
+        "packagesPath": "C:\\Users\\Anibal Yañez\\.nuget\\packages\\",
+        "outputPath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.CrossCutting.Bus\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Anibal Yañez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain.Core\\App.Domain.Core.csproj": {
+                "projectPath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain.Core\\App.Domain.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.Data\\App.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.Data\\App.Infra.Data.csproj",
+        "projectName": "App.Infra.Data",
+        "projectPath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.Data\\App.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\Anibal Yañez\\.nuget\\packages\\",
+        "outputPath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Anibal Yañez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain.Core\\App.Domain.Core.csproj": {
+                "projectPath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain.Core\\App.Domain.Core.csproj"
+              },
+              "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain\\App.Domain.csproj": {
+                "projectPath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain\\App.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "NetDevPack.Identity": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

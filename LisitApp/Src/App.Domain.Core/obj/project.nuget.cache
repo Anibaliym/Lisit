@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "7jFDtbSDDldAV6Z0cl8yt2nmNjdBifeh41M8sKeuHsd4FXgFnLHuvS6MpCitE68QxRERK3tqYOGgXqPKrSNuKA==",
+  "dgSpecHash": "qpwCt/RHe2+HjMjxcy1Sz5+5COOibl/RFAS+lcc1FB/fAZOtNJ5Lu4NhiXHz65Yp09WdoZaarqaYevJPPD0Q7w==",
   "success": true,
   "projectFilePath": "C:\\git-anibaliym\\PruebaTecnica\\LisitApp\\Src\\App.Domain.Core\\App.Domain.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Anibal Yañez\\.nuget\\packages\\ardalis.smartenum\\2.1.0\\ardalis.smartenum.2.1.0.nupkg.sha512",
+    "C:\\Users\\Anibal Yañez\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\Anibal Yañez\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\Anibal Yañez\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Anibal Yañez\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

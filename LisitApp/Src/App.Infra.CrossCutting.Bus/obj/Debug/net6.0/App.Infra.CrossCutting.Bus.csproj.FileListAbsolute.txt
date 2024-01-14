@@ -1,0 +1,16 @@
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\bin\Debug\net6.0\App.Infra.CrossCutting.Bus.deps.json
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\bin\Debug\net6.0\App.Infra.CrossCutting.Bus.dll
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\bin\Debug\net6.0\App.Infra.CrossCutting.Bus.pdb
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\bin\Debug\net6.0\App.Domain.Core.dll
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\bin\Debug\net6.0\App.Domain.Core.pdb
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\obj\Debug\net6.0\App.Infra.CrossCutting.Bus.csproj.AssemblyReference.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\obj\Debug\net6.0\App.Infra.CrossCutting.Bus.GeneratedMSBuildEditorConfig.editorconfig
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\obj\Debug\net6.0\App.Infra.CrossCutting.Bus.AssemblyInfoInputs.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\obj\Debug\net6.0\App.Infra.CrossCutting.Bus.AssemblyInfo.cs
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\obj\Debug\net6.0\App.Infra.CrossCutting.Bus.csproj.CoreCompileInputs.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\obj\Debug\net6.0\App.Infra.CrossCutting.Bus.sourcelink.json
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\obj\Debug\net6.0\App.Infra.CrossCutting.Bus.csproj.CopyComplete
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\obj\Debug\net6.0\App.Infra.CrossCutting.Bus.dll
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\obj\Debug\net6.0\refint\App.Infra.CrossCutting.Bus.dll
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\obj\Debug\net6.0\App.Infra.CrossCutting.Bus.pdb
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.Bus\obj\Debug\net6.0\ref\App.Infra.CrossCutting.Bus.dll
