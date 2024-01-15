@@ -1,3 +1,10 @@
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\App.Services.Api.csproj.AssemblyReference.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\App.Services.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\App.Services.Api.AssemblyInfoInputs.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\App.Services.Api.AssemblyInfo.cs
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\App.Services.Api.csproj.CoreCompileInputs.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\App.Services.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\App.Services.Api.sourcelink.json
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\bin\Debug\net6.0\appsettings.Development.json
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\bin\Debug\net6.0\appsettings.json
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\bin\Debug\net6.0\App.Services.Api.exe
@@ -72,14 +79,6 @@ C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\bin\Debug\net6.0\Ap
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\bin\Debug\net6.0\App.Domain.pdb
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\bin\Debug\net6.0\App.Domain.Core.pdb
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\bin\Debug\net6.0\App.Infra.Data.pdb
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\App.Services.Api.csproj.AssemblyReference.cache
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\App.Services.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\App.Services.Api.AssemblyInfoInputs.cache
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\App.Services.Api.AssemblyInfo.cs
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\App.Services.Api.csproj.CoreCompileInputs.cache
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\App.Services.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\App.Services.Api.MvcApplicationPartsAssemblyInfo.cache
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\App.Services.Api.sourcelink.json
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\staticwebassets.build.json
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\staticwebassets.development.json
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Services.Api\obj\Debug\net6.0\staticwebassets\msbuild.App.Services.Api.Microsoft.AspNetCore.StaticWebAssets.props

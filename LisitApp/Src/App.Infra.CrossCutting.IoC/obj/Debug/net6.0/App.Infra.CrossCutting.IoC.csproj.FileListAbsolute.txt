@@ -1,3 +1,9 @@
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\obj\Debug\net6.0\App.Infra.CrossCutting.IoC.csproj.AssemblyReference.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\obj\Debug\net6.0\App.Infra.CrossCutting.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\obj\Debug\net6.0\App.Infra.CrossCutting.IoC.AssemblyInfoInputs.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\obj\Debug\net6.0\App.Infra.CrossCutting.IoC.AssemblyInfo.cs
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\obj\Debug\net6.0\App.Infra.CrossCutting.IoC.csproj.CoreCompileInputs.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\obj\Debug\net6.0\App.Infra.CrossCutting.IoC.sourcelink.json
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\bin\Debug\net6.0\App.Infra.CrossCutting.IoC.deps.json
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\bin\Debug\net6.0\App.Infra.CrossCutting.IoC.dll
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\bin\Debug\net6.0\App.Infra.CrossCutting.IoC.pdb
@@ -11,12 +17,6 @@ C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\bin\Debug
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\bin\Debug\net6.0\App.Infra.Data.pdb
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\bin\Debug\net6.0\App.Domain.Core.pdb
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\bin\Debug\net6.0\App.Infra.CrossCutting.Bus.pdb
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\obj\Debug\net6.0\App.Infra.CrossCutting.IoC.csproj.AssemblyReference.cache
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\obj\Debug\net6.0\App.Infra.CrossCutting.IoC.GeneratedMSBuildEditorConfig.editorconfig
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\obj\Debug\net6.0\App.Infra.CrossCutting.IoC.AssemblyInfoInputs.cache
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\obj\Debug\net6.0\App.Infra.CrossCutting.IoC.AssemblyInfo.cs
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\obj\Debug\net6.0\App.Infra.CrossCutting.IoC.csproj.CoreCompileInputs.cache
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\obj\Debug\net6.0\App.Infra.CrossCutting.IoC.sourcelink.json
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\obj\Debug\net6.0\App.Infra.CrossCutting.IoC.csproj.CopyComplete
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\obj\Debug\net6.0\App.Infra.CrossCutting.IoC.dll
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.CrossCutting.IoC\obj\Debug\net6.0\refint\App.Infra.CrossCutting.IoC.dll
