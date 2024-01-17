@@ -1,4 +1,5 @@
-﻿using App.Application.ViewModels.Usuario;
+﻿using App.Application.EventSourcedNormalizers;
+using App.Application.ViewModels.Usuario;
 using App.Domain.Core.Messaging;
 
 namespace App.Application.Interfaces
@@ -12,6 +13,6 @@ namespace App.Application.Interfaces
         Task<CommandResponse> LoginUsuario(string rut, string contrasena);
         Task<UsuarioViewModel> BuscaPorRut(string rut);
 
-        //Task<IList<UsuarioHistoryData>> GetAllHistory(Guid id);
+        Task<IList<UsuarioHistoryData>> GetAllHistory(Guid id);
     }
 }

@@ -27,12 +27,5 @@ namespace App.Services.Api.Controllers
         {
             return await _usuarioAppService.LoginUsuario(rut, contrasena);
         }
-
-
-        //[HttpGet("BuscaPorId/{id:guid}")]
-        //public async Task<UsuarioViewModel> BuscaPorId(Guid id)
-        //{
-        //    return await _usuarioAppService.BuscaPorId(id);
-        //}
     }
 }

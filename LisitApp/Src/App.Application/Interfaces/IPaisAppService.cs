@@ -1,4 +1,5 @@
-﻿using App.Application.ViewModels.Pais;
+﻿using App.Application.EventSourcedNormalizers;
+using App.Application.ViewModels.Pais;
 using App.Domain.Core.Messaging;
 
 namespace App.Application.Interfaces
@@ -11,5 +12,7 @@ namespace App.Application.Interfaces
 
         Task<PaisViewModel> BuscaPorId(Guid id);
         Task<PaisViewModel> BuscaPorNombrePais(string nombre);
+
+        Task<IList<PaisHistoryData>> GetAllHistory(Guid id);
     }
 }

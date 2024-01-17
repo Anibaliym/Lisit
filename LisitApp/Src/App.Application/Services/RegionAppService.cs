@@ -1,4 +1,5 @@
-﻿using App.Application.Interfaces;
+﻿using App.Application.EventSourcedNormalizers;
+using App.Application.Interfaces;
 using App.Application.ViewModels.Region;
 using App.Domain.Commands.Region.Commands;
 using App.Domain.Core.Mediator;
@@ -91,6 +92,11 @@ namespace App.Application.Services
         //    var updateCommand = _mapper.Map<RegionModificarCommand>(modelo);
         //    return await _mediator.SendCommand(updateCommand);
         //}
+
+        public async Task<IList<RegionHistoryData>> GetAllHistory(Guid id)
+        {
+            return RegionHistory.ToJavaScriptCustomerHistory(await _eventStoreRepository.All(id));
+        }
 
         public void Dispose()
         {

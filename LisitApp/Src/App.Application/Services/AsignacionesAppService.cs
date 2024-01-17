@@ -1,4 +1,6 @@
-﻿using App.Application.Interfaces;
+﻿using App.Application.EventSourcedNormalizers.Usuario;
+using App.Application.EventSourcedNormalizers;
+using App.Application.Interfaces;
 using App.Application.ViewModels.Asignaciones;
 using App.Domain.Commands.Asignaciones.Commands;
 using App.Domain.Core.Mediator;
@@ -34,6 +36,11 @@ namespace App.Application.Services
         {
             var createCommand = _mapper.Map<AsignacionesCrearCommand>(modelo);
             return await _mediator.SendCommand(createCommand);
+        }
+
+        public async Task<IList<AsignacionesHistoryData>> GetAllHistory(Guid id)
+        {
+            return AsignacionesHistory.ToJavaScriptCustomerHistory(await _eventStoreRepository.All(id));
         }
 
         public void Dispose()

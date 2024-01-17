@@ -1,4 +1,5 @@
-﻿using App.Application.Interfaces;
+﻿using App.Application.EventSourcedNormalizers;
+using App.Application.Interfaces;
 using App.Application.ViewModels.Comuna;
 using App.Domain.Commands.Comuna.Commands;
 using App.Domain.Core.Mediator;
@@ -101,6 +102,11 @@ namespace App.Application.Services
         //    var updateCommand = _mapper.Map<ComunaModificarCommand>(modelo);
         //    return await _mediator.SendCommand(updateCommand);
         //}
+
+        public async Task<IList<ComunaHistoryData>> GetAllHistory(Guid id)
+        {
+            return ComunaHistory.ToJavaScriptCustomerHistory(await _eventStoreRepository.All(id));
+        }
 
         public void Dispose()
         {

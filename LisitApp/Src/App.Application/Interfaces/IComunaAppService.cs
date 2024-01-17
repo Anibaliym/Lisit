@@ -1,4 +1,5 @@
-﻿using App.Application.ViewModels.Comuna;
+﻿using App.Application.EventSourcedNormalizers;
+using App.Application.ViewModels.Comuna;
 using App.Domain.Core.Messaging;
 
 namespace App.Application.Interfaces
@@ -11,5 +12,8 @@ namespace App.Application.Interfaces
 
         Task<ComunaViewModel> BuscaPorId(Guid id);
         Task<ComunaViewModel> BuscaPorNombreComuna(string nombre);
+
+        Task<IList<ComunaHistoryData>> GetAllHistory(Guid id);
+
     }
 }

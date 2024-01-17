@@ -1,11 +1,11 @@
-﻿using App.Application.Interfaces;
+﻿using App.Application.EventSourcedNormalizers;
+using App.Application.Interfaces;
 using App.Application.ViewModels.Pais;
 using App.Domain.Commands.Pais.Commands;
 using App.Domain.Core.Mediator;
 using App.Domain.Core.Messaging;
 using App.Domain.Enumerations.Usuario;
 using App.Domain.Interfaces;
-using App.Infra.Data.Repository;
 using App.Infra.Data.Repository.EventSourcing;
 using AutoMapper;
 
@@ -83,6 +83,11 @@ namespace App.Application.Services
         //    var updateCommand = _mapper.Map<PaisModificarCommand>(modelo);
         //    return await _mediator.SendCommand(updateCommand);
         //}
+
+        public async Task<IList<PaisHistoryData>> GetAllHistory(Guid id)
+        {
+            return PaisHistory.ToJavaScriptCustomerHistory(await _eventStoreRepository.All(id));
+        }
 
         public void Dispose()
         {

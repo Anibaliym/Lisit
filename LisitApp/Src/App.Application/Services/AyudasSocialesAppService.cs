@@ -1,4 +1,5 @@
-﻿using App.Application.Interfaces;
+﻿using App.Application.EventSourcedNormalizers;
+using App.Application.Interfaces;
 using App.Application.ViewModels.AyudasSociales;
 using App.Domain.Commands.AyudasSociales.Commands;
 using App.Domain.Core.Mediator;
@@ -36,6 +37,11 @@ namespace App.Application.Services
         {
             var createCommand = _mapper.Map<AyudasSocialesCrearCommand>(modelo);
             return await _mediator.SendCommand(createCommand);
+        }
+
+        public async Task<IList<AyudasSocialesHistoryData>> GetAllHistory(Guid id)
+        {
+            return AyudasSocialesHistory.ToJavaScriptCustomerHistory(await _eventStoreRepository.All(id));
         }
 
         public void Dispose()
