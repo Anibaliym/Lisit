@@ -15,6 +15,5 @@ namespace App.Infra.Data.Mappings
                 .HasColumnName("Action")
                 .HasColumnType("varchar(100)");
         }
-
     }
 }

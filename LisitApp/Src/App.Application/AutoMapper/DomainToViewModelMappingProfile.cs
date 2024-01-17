@@ -1,4 +1,7 @@
-﻿using App.Application.ViewModels.Usuario;
+﻿using App.Application.ViewModels.Comuna;
+using App.Application.ViewModels.Pais;
+using App.Application.ViewModels.Region;
+using App.Application.ViewModels.Usuario;
 using App.Domain.Entities;
 using AutoMapper;
 
@@ -9,6 +12,9 @@ namespace App.Application.AutoMapper
         public DomainToViewModelMappingProfile()
         {
             CreateMap<Usuario, UsuarioViewModel>();
+            CreateMap<Pais, PaisViewModel>();
+            CreateMap<Region, RegionViewModel>();
+            CreateMap<Comuna, ComunaViewModel>();
         }
     }
 }

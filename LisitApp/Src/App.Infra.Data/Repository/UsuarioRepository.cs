@@ -10,8 +10,7 @@ namespace App.Infra.Data.Repository
     {
         protected readonly LisitContext Db;
         protected readonly DbSet<Usuario> DbSet;
-        
-        
+                
         public IUnitOfWork UnitOfWork => Db;
 
         public UsuarioRepository(LisitContext context)

@@ -17,7 +17,7 @@ namespace App.Domain.Commands.Usuario.Handlers
 
             if (existeusuario == null)
             {
-                AddError($"No existe el contacto con el id '{message.Id}'.");
+                AddError($"No existe el usuario con el id '{message.Id}'.");
                 return CommandResponse;
             }
 

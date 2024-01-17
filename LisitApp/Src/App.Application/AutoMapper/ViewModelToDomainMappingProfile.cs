@@ -1,4 +1,10 @@
-﻿using App.Application.ViewModels.Usuario;
+﻿using App.Application.ViewModels.Comuna;
+using App.Application.ViewModels.Pais;
+using App.Application.ViewModels.Region;
+using App.Application.ViewModels.Usuario;
+using App.Domain.Commands.Comuna.Commands;
+using App.Domain.Commands.Pais.Commands;
+using App.Domain.Commands.Region.Commands;
 using App.Domain.Commands.Usuario.Commands;
 using AutoMapper;
 
@@ -26,6 +32,31 @@ namespace App.Application.AutoMapper
                 usuario.Contrasena, 
                 usuario.Rol
             ));
+
+            #endregion
+
+            #region Pais
+
+            CreateMap<PaisCrearViewModel, PaisCrearCommand>().ConstructUsing(pais => new PaisCrearCommand(pais.Nombre));
+
+            CreateMap<PaisViewModel, PaisModificarCommand>().ConstructUsing(pais => new PaisModificarCommand(pais.Id, pais.Nombre));
+
+            #endregion
+
+            #region Region
+
+            CreateMap<RegionCrearViewModel, RegionCrearCommand>().ConstructUsing(region => new RegionCrearCommand(region.IdPais, region.Nombre));
+
+            #endregion
+
+            #region Comuna
+            CreateMap<ComunaCrearViewModel, ComunaCrearCommand>().ConstructUsing(comuna => new ComunaCrearCommand(comuna.IdRegion, comuna.Nombre));
+
+            //CreateMap<ComunaViewModel, ComunaModificarCommand>().ConstructUsing(comuna => new ComunaModificarCommand(
+            //    comuna.Id, 
+            //    comuna.IdRegion, 
+            //    comuna.Nombre
+            //));
 
             #endregion
         }

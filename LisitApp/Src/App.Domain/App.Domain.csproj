@@ -22,25 +22,10 @@
     <Folder Include="Commands\AyudasSociales\Commands\" />
     <Folder Include="Commands\AyudasSociales\Handlers\" />
     <Folder Include="Commands\AyudasSociales\Validations\" />
-    <Folder Include="Commands\Comuna\Commands\" />
-    <Folder Include="Commands\Comuna\Handlers\" />
-    <Folder Include="Commands\Comuna\Validations\" />
-    <Folder Include="Commands\Pais\Commands\" />
-    <Folder Include="Commands\Pais\Handlers\" />
-    <Folder Include="Commands\Pais\Validations\" />
-    <Folder Include="Commands\Region\Commands\" />
-    <Folder Include="Commands\Region\Handlers\" />
-    <Folder Include="Commands\Region\Validations\" />
     <Folder Include="Events\Asignaciones\Handlers\" />
     <Folder Include="Events\Asignaciones\Events\" />
     <Folder Include="Events\AyudasSociales\Events\" />
     <Folder Include="Events\AyudasSociales\Handlers\" />
-    <Folder Include="Events\Comuna\Events\" />
-    <Folder Include="Events\Comuna\Handlers\" />
-    <Folder Include="Events\Pais\Events\" />
-    <Folder Include="Events\Pais\Handlers\" />
-    <Folder Include="Events\Region\Events\" />
-    <Folder Include="Events\Region\Handlers\" />
   </ItemGroup>
 
 </Project>

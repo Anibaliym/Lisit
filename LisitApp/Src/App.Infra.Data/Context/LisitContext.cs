@@ -22,6 +22,9 @@ namespace App.Infra.Data.Context
         }
 
         public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Pais> Pais { get; set; }
+        public DbSet<Region> Region { get; set; }
+        public DbSet<Comuna> Comuna { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
