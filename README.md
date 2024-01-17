@@ -1,6 +1,6 @@
 # Desarrollo #
 
-Aplicación responsable de administrar toda la informacion y procesos asociados a los usuarios, localización y servicios de ayudas sociales
+Microservicio responsable de administrar toda la informacion y procesos asociados a los usuarios, localización y servicios de ayudas sociales.
 
 ## Estructura de proyecto
 
@@ -23,6 +23,7 @@ Se debe ejecutar el único archivo "GeneraBaseDeDatos"
 - FluentValidator
 - MediatR
 - Swagger UI with JWT support
+- Script de generación de base de datos (SQL Server)
 
 ## Architecture:
 
