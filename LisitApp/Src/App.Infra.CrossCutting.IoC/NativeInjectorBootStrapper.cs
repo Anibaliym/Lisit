@@ -1,5 +1,7 @@
 ﻿using App.Application.Interfaces;
 using App.Application.Services;
+using App.Domain.Commands.Asignaciones.Commands;
+using App.Domain.Commands.Asignaciones.Handlers;
 using App.Domain.Commands.AyudasSociales.Commands;
 using App.Domain.Commands.AyudasSociales.Handlers;
 using App.Domain.Commands.Comuna.Commands;
@@ -13,6 +15,8 @@ using App.Domain.Commands.Usuario.Handlers;
 using App.Domain.Core.Events;
 using App.Domain.Core.Mediator;
 using App.Domain.Core.Messaging;
+using App.Domain.Events.Asignaciones.Events;
+using App.Domain.Events.Asignaciones.Handlers;
 using App.Domain.Events.AyudasSociales.Events;
 using App.Domain.Events.AyudasSociales.Handlers;
 using App.Domain.Events.Comuna.Events;
@@ -49,6 +53,7 @@ namespace App.Infra.CrossCutting.IoC
             services.AddScoped<IRegionAppService, RegionAppService>();
             services.AddScoped<IComunaAppService, ComunaAppService>();
             services.AddScoped<IAyudasSocialesAppService, AyudasSocialesAppService>();
+            services.AddScoped<IAsignacionesAppService, AsignacionesAppService>();
 
             //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             //Domain Events
@@ -71,6 +76,8 @@ namespace App.Infra.CrossCutting.IoC
             //services.AddScoped<INotificationHandler<ComunaEliminarEvent>, ComunaEliminarEventHandler>();
 
             services.AddScoped<INotificationHandler<AyudasSocialesCrearEvent>, AyudasSocialesCrearEventHandler>();
+
+            services.AddScoped<INotificationHandler<AsignacionesCrearEvent>, AsignacionesCrearEventHandler>();
 
 
 
@@ -96,6 +103,9 @@ namespace App.Infra.CrossCutting.IoC
 
             services.AddScoped<IRequestHandler<AyudasSocialesCrearCommand, CommandResponse>, AyudasSocialesCommandHandler>();
 
+            services.AddScoped<IRequestHandler<AsignacionesCrearCommand, CommandResponse>, AsignacionesCommandHandler>();
+
+
             //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             //InfraData
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
@@ -103,6 +113,7 @@ namespace App.Infra.CrossCutting.IoC
             services.AddScoped<IRegionRepository, RegionRepository>();
             services.AddScoped<IComunaRepository, ComunaRepository>();
             services.AddScoped<IAyudasSocialesRepository, AyudasSocialesRepository>();
+            services.AddScoped<IAsignacionesRepository, AsignacionesRepository>();
 
             services.AddScoped<LisitContext>();
 

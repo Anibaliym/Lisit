@@ -15,12 +15,4 @@
     <ProjectReference Include="..\App.Infra.CrossCutting.Bus\App.Infra.CrossCutting.Bus.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Commands\Asignaciones\Validations\" />
-    <Folder Include="Commands\Asignaciones\Handlers\" />
-    <Folder Include="Commands\Asignaciones\Commands\" />
-    <Folder Include="Events\Asignaciones\Handlers\" />
-    <Folder Include="Events\Asignaciones\Events\" />
-  </ItemGroup>
-
 </Project>

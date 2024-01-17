@@ -1,4 +1,5 @@
-﻿using App.Application.ViewModels.AyudasSociales;
+﻿using App.Application.ViewModels.Asignaciones;
+using App.Application.ViewModels.AyudasSociales;
 using App.Application.ViewModels.Comuna;
 using App.Application.ViewModels.Pais;
 using App.Application.ViewModels.Region;
@@ -17,6 +18,7 @@ namespace App.Application.AutoMapper
             CreateMap<Region, RegionViewModel>();
             CreateMap<Comuna, ComunaViewModel>();
             CreateMap<AyudasSociales, AyudasSocialesViewModel>();
+            CreateMap<Asignaciones, AsignacionesViewModel>();
         }
     }
 }
