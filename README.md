@@ -25,7 +25,7 @@ Se debe ejecutar el único archivo "GeneraBaseDeDatos"
 - Swagger UI with JWT support
 - Script de generación de base de datos (SQL Server)
 
-## Architecture:
+## Arquitectura:
 
 - Arquitectura completa con preocupaciones de separación de responsabilidades, código SÓLIDO y limpio
 - Diseño basado en dominios (capas y patrón de modelo de dominio)
