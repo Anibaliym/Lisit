@@ -11,6 +11,8 @@ Este directorio contiene todo el codigo fuente asociado al proyecto
 ### Directorio `db`
 
 Este directorio contiene los scripts iniciales e informacion para la generacion de los repositorios de datos.
+Se debe ejecutar el único archivo "GeneraBaseDeDatos"
+
 
 ## Tecnologías Implementadas:
 
