@@ -51,8 +51,7 @@ create table Comuna (
 )
 go 
 
-
-CREATE TABLE AyudasSociales (
+create table AyudasSociales (
 	Id [uniqueidentifier] primary key,
     IdComuna [uniqueidentifier]FOREIGN KEY REFERENCES Comuna(Id),
     Descripcion NVARCHAR(255),
@@ -61,12 +60,12 @@ CREATE TABLE AyudasSociales (
 go
 
 -- PENDIENTE
--- CREATE TABLE Asignaciones (
--- 	Id [uniqueidentifier] primary key,
---     idUsuario INT FOREIGN KEY REFERENCES Usuario(Id),
---     idAyudaSocial INT FOREIGN KEY REFERENCES AyudasSociales(Id),
---     FechaAsignacion DATETIME DEFAULT GETDATE()
--- );
+create table Asignaciones (
+	Id [uniqueidentifier] primary key,
+    idUsuario [uniqueidentifier],
+    idAyudaSocial [uniqueidentifier],
+    FechaAsignacion datetime 
+);
 
 
 

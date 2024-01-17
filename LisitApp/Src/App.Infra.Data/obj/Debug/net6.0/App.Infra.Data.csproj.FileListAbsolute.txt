@@ -1,9 +1,3 @@
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\obj\Debug\net6.0\App.Infra.Data.csproj.AssemblyReference.cache
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\obj\Debug\net6.0\App.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\obj\Debug\net6.0\App.Infra.Data.AssemblyInfoInputs.cache
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\obj\Debug\net6.0\App.Infra.Data.AssemblyInfo.cs
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\obj\Debug\net6.0\App.Infra.Data.csproj.CoreCompileInputs.cache
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\obj\Debug\net6.0\App.Infra.Data.sourcelink.json
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\bin\Debug\net6.0\App.Infra.Data.deps.json
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\bin\Debug\net6.0\App.Infra.Data.dll
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\bin\Debug\net6.0\App.Infra.Data.pdb
@@ -13,6 +7,12 @@ C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\bin\Debug\net6.0\App.
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\bin\Debug\net6.0\App.Domain.Core.pdb
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\bin\Debug\net6.0\App.Domain.pdb
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\bin\Debug\net6.0\App.Infra.CrossCutting.Bus.pdb
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\obj\Debug\net6.0\App.Infra.Data.csproj.AssemblyReference.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\obj\Debug\net6.0\App.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\obj\Debug\net6.0\App.Infra.Data.AssemblyInfoInputs.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\obj\Debug\net6.0\App.Infra.Data.AssemblyInfo.cs
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\obj\Debug\net6.0\App.Infra.Data.csproj.CoreCompileInputs.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\obj\Debug\net6.0\App.Infra.Data.sourcelink.json
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\obj\Debug\net6.0\App.Infra.Data.csproj.CopyComplete
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\obj\Debug\net6.0\App.Infra.Data.dll
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Infra.Data\obj\Debug\net6.0\refint\App.Infra.Data.dll

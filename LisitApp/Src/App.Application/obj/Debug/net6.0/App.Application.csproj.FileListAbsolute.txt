@@ -1,9 +1,3 @@
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\obj\Debug\net6.0\App.Application.csproj.AssemblyReference.cache
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\obj\Debug\net6.0\App.Application.GeneratedMSBuildEditorConfig.editorconfig
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\obj\Debug\net6.0\App.Application.AssemblyInfoInputs.cache
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\obj\Debug\net6.0\App.Application.AssemblyInfo.cs
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\obj\Debug\net6.0\App.Application.csproj.CoreCompileInputs.cache
-C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\obj\Debug\net6.0\App.Application.sourcelink.json
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\bin\Debug\net6.0\App.Application.deps.json
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\bin\Debug\net6.0\App.Application.dll
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\bin\Debug\net6.0\App.Application.pdb
@@ -15,6 +9,12 @@ C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\bin\Debug\net6.0\App
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\bin\Debug\net6.0\App.Infra.Data.pdb
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\bin\Debug\net6.0\App.Domain.Core.pdb
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\bin\Debug\net6.0\App.Infra.CrossCutting.Bus.pdb
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\obj\Debug\net6.0\App.Application.csproj.AssemblyReference.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\obj\Debug\net6.0\App.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\obj\Debug\net6.0\App.Application.AssemblyInfoInputs.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\obj\Debug\net6.0\App.Application.AssemblyInfo.cs
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\obj\Debug\net6.0\App.Application.csproj.CoreCompileInputs.cache
+C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\obj\Debug\net6.0\App.Application.sourcelink.json
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\obj\Debug\net6.0\App.Application.csproj.CopyComplete
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\obj\Debug\net6.0\App.Application.dll
 C:\git-anibaliym\PruebaTecnica\LisitApp\Src\App.Application\obj\Debug\net6.0\refint\App.Application.dll

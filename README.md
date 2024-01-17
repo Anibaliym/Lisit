@@ -11,3 +11,23 @@ Este directorio contiene todo el codigo fuente asociado al proyecto
 ### Directorio `db`
 
 Este directorio contiene los scripts iniciales e informacion para la generacion de los repositorios de datos.
+
+## Tecnologías Implementadas:
+
+- ASP.NET WebApi Core
+- ASP.NET Identity Core
+- Entity Framework Core 6.0
+- AutoMapper
+- FluentValidator
+- MediatR
+- Swagger UI with JWT support
+
+## Architecture:
+
+- Arquitectura completa con preocupaciones de separación de responsabilidades, código SÓLIDO y limpio
+- Diseño basado en dominios (capas y patrón de modelo de dominio)
+- Eventos de dominio
+- Validaciones de dominio
+- Búsqueda de eventos
+- Repositorio
+

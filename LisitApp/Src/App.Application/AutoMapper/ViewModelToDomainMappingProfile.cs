@@ -1,4 +1,14 @@
-﻿using App.Application.ViewModels.Usuario;
+﻿using App.Application.ViewModels.Asignaciones;
+using App.Application.ViewModels.AyudasSociales;
+using App.Application.ViewModels.Comuna;
+using App.Application.ViewModels.Pais;
+using App.Application.ViewModels.Region;
+using App.Application.ViewModels.Usuario;
+using App.Domain.Commands.Asignaciones.Commands;
+using App.Domain.Commands.AyudasSociales.Commands;
+using App.Domain.Commands.Comuna.Commands;
+using App.Domain.Commands.Pais.Commands;
+using App.Domain.Commands.Region.Commands;
 using App.Domain.Commands.Usuario.Commands;
 using AutoMapper;
 
@@ -27,6 +37,32 @@ namespace App.Application.AutoMapper
                 usuario.Rol
             ));
 
+            #endregion
+
+            #region Pais
+
+            CreateMap<PaisCrearViewModel, PaisCrearCommand>().ConstructUsing(pais => new PaisCrearCommand(pais.Nombre));
+
+            CreateMap<PaisViewModel, PaisModificarCommand>().ConstructUsing(pais => new PaisModificarCommand(pais.Id, pais.Nombre));
+
+            #endregion
+
+            #region Region
+
+            CreateMap<RegionCrearViewModel, RegionCrearCommand>().ConstructUsing(region => new RegionCrearCommand(region.IdPais, region.Nombre));
+
+            #endregion
+
+            #region Comuna
+            CreateMap<ComunaCrearViewModel, ComunaCrearCommand>().ConstructUsing(comuna => new ComunaCrearCommand(comuna.IdRegion, comuna.Nombre));
+            #endregion
+
+            #region AyudasSociales
+            CreateMap<AyudasSocialesCrearViewModel, AyudasSocialesCrearCommand>().ConstructUsing(item => new AyudasSocialesCrearCommand(item.IdComuna, item.Descripcion, item.Anio));
+            #endregion
+
+            #region Asignaciones
+            CreateMap<AsignacionesCrearViewModel, AsignacionesCrearCommand>().ConstructUsing(item => new AsignacionesCrearCommand(item.IdUsuario, item.IdAyudaSocial, item.FechaAsignacion));
             #endregion
         }
     }

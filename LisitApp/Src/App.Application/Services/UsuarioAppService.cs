@@ -1,4 +1,6 @@
-﻿using App.Application.Interfaces;
+﻿using App.Application.EventSourcedNormalizers;
+using App.Application.EventSourcedNormalizers.Usuario;
+using App.Application.Interfaces;
 using App.Application.ViewModels.Usuario;
 using App.Domain.Commands.Usuario.Commands;
 using App.Domain.Core.Mediator;
@@ -87,6 +89,11 @@ namespace App.Application.Services
             }
 
             return response; 
+        }
+
+        public async Task<IList<UsuarioHistoryData>> GetAllHistory(Guid id)
+        {
+            return UsuarioHistory.ToJavaScriptCustomerHistory(await _eventStoreRepository.All(id));
         }
 
         public void Dispose()
