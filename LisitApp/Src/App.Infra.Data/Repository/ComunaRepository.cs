@@ -26,10 +26,6 @@ namespace App.Infra.Data.Repository
 
         public async Task<Comuna> BuscaPorNombreComuna(string nombre)
         {
-
-            var x = await DbSet.AsNoTracking().Where(comuna => comuna.Nombre == nombre).FirstOrDefaultAsync();
-
-
             return await DbSet.AsNoTracking().Where(comuna => comuna.Nombre == nombre).FirstOrDefaultAsync();
         }
 

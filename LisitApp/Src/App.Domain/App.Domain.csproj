@@ -19,13 +19,8 @@
     <Folder Include="Commands\Asignaciones\Validations\" />
     <Folder Include="Commands\Asignaciones\Handlers\" />
     <Folder Include="Commands\Asignaciones\Commands\" />
-    <Folder Include="Commands\AyudasSociales\Commands\" />
-    <Folder Include="Commands\AyudasSociales\Handlers\" />
-    <Folder Include="Commands\AyudasSociales\Validations\" />
     <Folder Include="Events\Asignaciones\Handlers\" />
     <Folder Include="Events\Asignaciones\Events\" />
-    <Folder Include="Events\AyudasSociales\Events\" />
-    <Folder Include="Events\AyudasSociales\Handlers\" />
   </ItemGroup>
 
 </Project>

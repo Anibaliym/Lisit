@@ -1,7 +1,9 @@
-﻿using App.Application.ViewModels.Comuna;
+﻿using App.Application.ViewModels.AyudasSociales;
+using App.Application.ViewModels.Comuna;
 using App.Application.ViewModels.Pais;
 using App.Application.ViewModels.Region;
 using App.Application.ViewModels.Usuario;
+using App.Domain.Commands.AyudasSociales.Commands;
 using App.Domain.Commands.Comuna.Commands;
 using App.Domain.Commands.Pais.Commands;
 using App.Domain.Commands.Region.Commands;
@@ -51,13 +53,10 @@ namespace App.Application.AutoMapper
 
             #region Comuna
             CreateMap<ComunaCrearViewModel, ComunaCrearCommand>().ConstructUsing(comuna => new ComunaCrearCommand(comuna.IdRegion, comuna.Nombre));
+            #endregion
 
-            //CreateMap<ComunaViewModel, ComunaModificarCommand>().ConstructUsing(comuna => new ComunaModificarCommand(
-            //    comuna.Id, 
-            //    comuna.IdRegion, 
-            //    comuna.Nombre
-            //));
-
+            #region AyudasSociales
+            CreateMap<AyudasSocialesCrearViewModel, AyudasSocialesCrearCommand>().ConstructUsing(item => new AyudasSocialesCrearCommand(item.IdComuna, item.Descripcion, item.Anio));
             #endregion
         }
     }

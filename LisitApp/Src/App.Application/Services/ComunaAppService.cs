@@ -1,12 +1,10 @@
 ﻿using App.Application.Interfaces;
 using App.Application.ViewModels.Comuna;
 using App.Domain.Commands.Comuna.Commands;
-using App.Domain.Commands.Region.Commands;
 using App.Domain.Core.Mediator;
 using App.Domain.Core.Messaging;
 using App.Domain.Enumerations.Usuario;
 using App.Domain.Interfaces;
-using App.Infra.Data.Repository;
 using App.Infra.Data.Repository.EventSourcing;
 using AutoMapper;
 

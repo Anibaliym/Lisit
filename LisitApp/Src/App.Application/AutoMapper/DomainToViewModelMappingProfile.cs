@@ -1,4 +1,5 @@
-﻿using App.Application.ViewModels.Comuna;
+﻿using App.Application.ViewModels.AyudasSociales;
+using App.Application.ViewModels.Comuna;
 using App.Application.ViewModels.Pais;
 using App.Application.ViewModels.Region;
 using App.Application.ViewModels.Usuario;
@@ -15,6 +16,7 @@ namespace App.Application.AutoMapper
             CreateMap<Pais, PaisViewModel>();
             CreateMap<Region, RegionViewModel>();
             CreateMap<Comuna, ComunaViewModel>();
+            CreateMap<AyudasSociales, AyudasSocialesViewModel>();
         }
     }
 }
