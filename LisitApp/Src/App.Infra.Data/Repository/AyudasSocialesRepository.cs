@@ -29,9 +29,39 @@ namespace App.Infra.Data.Repository
             return await DbSet.AsNoTracking().Where(ayudaSocial => ayudaSocial.Id == id).FirstOrDefaultAsync();
         }
 
+        public async Task<int> Busca_AnioAyudaSocial(Guid id)
+        {
+            int anio = 0; 
+
+            var ayudaSocial = await DbSet.AsNoTracking().Where(usuario => usuario.Id == id).FirstOrDefaultAsync();
+            
+            if (ayudaSocial != null) {
+                anio = ayudaSocial.Anio; 
+            }
+
+            return anio;
+        }
+
         public void Dispose()
         {
             GC.SuppressFinalize(this);
+        }
+
+        public async Task<object> Busca_AnioAyudayAsignacionesUsuario(Guid idUsuario)
+        {
+            var consulta = from ayuda in Db.AyudasSociales
+                           join asig in Db.Asignaciones on ayuda.Id equals asig.IdAyudaSocial
+                           where asig.IdUsuario == idUsuario
+                           orderby ayuda.Anio
+                           select new
+                           {
+                               ayuda.Descripcion,
+                               ayuda.Anio,
+                               asig.FechaAsignacion,
+                               asig.IdUsuario
+                           };
+
+            return consulta.ToList(); 
         }
     }
 }

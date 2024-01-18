@@ -7,5 +7,7 @@ namespace App.Domain.Interfaces
     {
         void Crear(AyudasSociales modelo);
         Task<AyudasSociales> BuscaPorId(Guid id);
+        Task<int> Busca_AnioAyudaSocial(Guid id);
+        Task<object> Busca_AnioAyudayAsignacionesUsuario(Guid idUsuario);
     }
 }

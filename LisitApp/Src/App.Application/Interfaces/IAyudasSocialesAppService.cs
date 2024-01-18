@@ -8,7 +8,7 @@ namespace App.Application.Interfaces
     {
         Task<CommandResponse> Crear(AyudasSocialesCrearViewModel modelo);
         Task<AyudasSocialesViewModel> BuscaPorId(Guid id);
-
+        Task<int> Busca_AnioAyudaSocial(Guid id);
         Task<IList<AyudasSocialesHistoryData>> GetAllHistory(Guid id);
     }
 }

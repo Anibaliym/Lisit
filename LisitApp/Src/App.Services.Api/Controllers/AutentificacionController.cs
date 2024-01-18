@@ -9,23 +9,23 @@ namespace App.Services.Api.Controllers
 
     public class AutentificacionController : ApiController
     {
-        private readonly IUsuarioAppService _usuarioAppService;
+        private readonly IServiciosDeDominioAppService _serviciosDeDominioAppService;
 
-        public AutentificacionController(IUsuarioAppService usuarioAppService)
+        public AutentificacionController(IServiciosDeDominioAppService serviciosDeDominioAppService)
         {
-            _usuarioAppService = usuarioAppService;
+            _serviciosDeDominioAppService = serviciosDeDominioAppService;
         }
 
         [HttpPost("RegistrarUsuario")]
         public async Task<IActionResult> RegistrarUsuario(UsuarioCrearViewModel modelo)
         {
-            return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(await _usuarioAppService.Crear(modelo));
+            return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(await _serviciosDeDominioAppService.RegistrarUsuario(modelo));
         }
 
         [HttpGet("LoginUsuario")]
         public async Task<CommandResponse> LoginUsuario(string rut, string contrasena)
         {
-            return await _usuarioAppService.LoginUsuario(rut, contrasena);
+            return await _serviciosDeDominioAppService.LoginUsuario(rut, contrasena);
         }
     }
 }

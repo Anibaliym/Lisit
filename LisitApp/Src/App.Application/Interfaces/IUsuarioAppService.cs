@@ -6,12 +6,12 @@ namespace App.Application.Interfaces
 {
     public interface IUsuarioAppService : IDisposable
     {
+        Task<UsuarioViewModel> BuscaPorId(Guid id);
+        Task<UsuarioViewModel> BuscaPorRut(string rut);
+
         Task<CommandResponse> Crear(UsuarioCrearViewModel modelo);
         Task<CommandResponse> Modificar(UsuarioModificarViewModel modelo);
         Task<CommandResponse> Eliminar(Guid id);
-        Task<UsuarioViewModel> BuscaPorId(Guid id);
-        Task<CommandResponse> LoginUsuario(string rut, string contrasena);
-        Task<UsuarioViewModel> BuscaPorRut(string rut);
 
         Task<IList<UsuarioHistoryData>> GetAllHistory(Guid id);
     }
