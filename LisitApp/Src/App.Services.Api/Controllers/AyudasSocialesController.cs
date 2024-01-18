@@ -1,6 +1,7 @@
 ﻿using App.Application.Interfaces;
-using App.Application.ViewModels.Asignaciones;
 using App.Application.ViewModels.AyudasSociales;
+using App.Application.ViewModels.ServiciosDeDominio;
+using App.Domain.Core.Messaging;
 using Microsoft.AspNetCore.Mvc;
 
 namespace App.Services.Api.Controllers
@@ -9,18 +10,24 @@ namespace App.Services.Api.Controllers
     public class AyudasSocialesController : ApiController
     {
         private readonly IAyudasSocialesAppService _ayudasSocialesAppService;
-        private readonly IAsignacionesAppService _asignacionesAppService;
+        private readonly IServiciosDeDominioAppService _serviciosDeDominioAppService;
 
-        public AyudasSocialesController(IAyudasSocialesAppService ayudasSocialesAppService, IAsignacionesAppService asignacionesAppService)
+        public AyudasSocialesController(IAyudasSocialesAppService ayudasSocialesAppService, IServiciosDeDominioAppService serviciosDeDominioAppService)
         {
             _ayudasSocialesAppService = ayudasSocialesAppService;
-            _asignacionesAppService = asignacionesAppService;
+            _serviciosDeDominioAppService = serviciosDeDominioAppService;
         }
 
-        [HttpPost("Crear")]
-        public async Task<IActionResult> Crear(AyudasSocialesCrearViewModel modelo)
+        [HttpPost("CrearAyudaSocialAdministrador")]
+        public async Task<IActionResult> CrearAyudaSocialAdministrador(CrearAyudasSocialViewModel modelo)
         {
-            return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(await _ayudasSocialesAppService.Crear(modelo));
+            return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(await _serviciosDeDominioAppService.CrearAyudaSocialAdministrador(modelo));
+        }
+
+        [HttpPost("RegistrarAsignacion")]
+        public async Task<IActionResult> RegistrarAsignacion(RegistrarAsignacionViewModel modelo)
+        {
+            return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(await _serviciosDeDominioAppService.RegistrarAsignacion(modelo));
         }
 
         [HttpGet("BuscaPorId/{id:guid}")]
@@ -29,23 +36,16 @@ namespace App.Services.Api.Controllers
             return await _ayudasSocialesAppService.BuscaPorId(id);
         }
 
-
-
-
-
-
-
-
-        [HttpPost("Crear_Asignacion")]
-        public async Task<IActionResult> Crear_Asignacion(AsignacionesCrearViewModel modelo)
+        [HttpGet("VerAyudasSocialesUsuarioAdmin")]
+        public async Task<CommandResponse> VerAyudasSocialesUsuarioAdmin(Guid idUsuarioGestionador, Guid idUsuarioAConsultar)
         {
-            return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(await _asignacionesAppService.Crear(modelo));
+            return await _serviciosDeDominioAppService.VerAyudasSocialesUsuarioAdmin(idUsuarioGestionador, idUsuarioAConsultar);
         }
 
-        [HttpGet("BuscaPorId_Asignaciones/{id:guid}")]
-        public async Task<AsignacionesViewModel> BuscaPorId_Asignaciones(Guid id)
+        [HttpGet("VerAyudasSocialesVigentePorAnio")]
+        public async Task<CommandResponse> VerAyudasSocialesVigentePorAnio(Guid idUsuario)
         {
-            return await _asignacionesAppService.BuscaPorId(id);
+            return await _serviciosDeDominioAppService.VerAyudasSocialesVigentePorAnio(idUsuario);
         }
     }
 }

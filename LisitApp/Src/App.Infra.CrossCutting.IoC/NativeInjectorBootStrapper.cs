@@ -54,6 +54,7 @@ namespace App.Infra.CrossCutting.IoC
             services.AddScoped<IComunaAppService, ComunaAppService>();
             services.AddScoped<IAyudasSocialesAppService, AyudasSocialesAppService>();
             services.AddScoped<IAsignacionesAppService, AsignacionesAppService>();
+            services.AddScoped<IServiciosDeDominioAppService, ServiciosDeDominioAppService>();
 
             //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             //Domain Events

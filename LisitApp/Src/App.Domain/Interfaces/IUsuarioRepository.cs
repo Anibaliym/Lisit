@@ -9,9 +9,10 @@ namespace App.Domain.Interfaces
         void Modificar(Usuario modelo);
         void Eliminar(Usuario modelo);
 
-        Task<Usuario> LoginUsuario(string rut, string contrasena);
+        Task<Usuario> BuscaPor_Rut_Contrasena(string rut, string contrasena);
         Task<Usuario> BuscaPorId(Guid id);
         Task<Usuario> BuscaPorRut(string rut);
-    }
 
+        Task<bool> EsUsuarioAdministrador(Guid id);
+    }
 }

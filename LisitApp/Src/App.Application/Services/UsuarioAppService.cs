@@ -54,42 +54,6 @@ namespace App.Application.Services
             var updateCommand = _mapper.Map<UsuarioModificarCommand>(modelo);
             return await _mediator.SendCommand(updateCommand);
         }
-        public async Task<CommandResponse> LoginUsuario(string rut, string contrasena)
-        {
-            CommandResponse response = new();
-
-            var informacionUsuario = await _usuarioRepository.LoginUsuario(rut, contrasena);
-
-            if (informacionUsuario != null)
-            {
-                response.Result = true;
-
-                response.Data = new
-                {
-                    Acceso = true,
-                    DatosUsuario = new
-                    {
-                        Nombre = informacionUsuario.Nombre,
-                        ApellidoPaterno = informacionUsuario.ApellidoPaterno,
-                        Rol = informacionUsuario.Rol
-                    },
-                    Info = "Acceso Permisito"
-                };
-            }
-            else
-            {
-                response.Result = true;
-
-                response.Data = new
-                {
-                    Acceso = false,
-                    DatosUsuario = new { },
-                    Info = "Acceso Denegado. El rut y la contraseña con coinciden."
-                };
-            }
-
-            return response; 
-        }
 
         public async Task<IList<UsuarioHistoryData>> GetAllHistory(Guid id)
         {
@@ -100,6 +64,5 @@ namespace App.Application.Services
         {
             GC.SuppressFinalize(this);
         }
-
     }
 }

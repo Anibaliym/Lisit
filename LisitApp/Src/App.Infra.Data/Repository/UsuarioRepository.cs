@@ -1,5 +1,6 @@
 ﻿using App.Domain.Core.Data;
 using App.Domain.Entities;
+using App.Domain.Enumerations.Usuario;
 using App.Domain.Interfaces;
 using App.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
@@ -43,9 +44,15 @@ namespace App.Infra.Data.Repository
         {
             return await DbSet.AsNoTracking().Where(usuario => usuario.Rut == rut).FirstOrDefaultAsync();
         }
-        public async Task<Usuario> LoginUsuario(string rut, string contrasena)
+        public async Task<Usuario> BuscaPor_Rut_Contrasena(string rut, string contrasena)
         {
             return await DbSet.AsNoTracking().Where(usuario => usuario.Rut == rut & usuario.Contrasena == contrasena).FirstOrDefaultAsync();
+        }
+        public async Task<bool> EsUsuarioAdministrador(Guid id)
+        {
+            var esAdmin = await DbSet.AsNoTracking().Where(usuario => usuario.Id == id & usuario.Rol == RolUsuarioEnum.ADMINISTRADOR.Name).FirstOrDefaultAsync();
+
+            return (esAdmin == null) ? false : true;
         }
 
         public void Dispose()

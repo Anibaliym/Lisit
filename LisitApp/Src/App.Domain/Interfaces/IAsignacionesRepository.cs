@@ -7,5 +7,7 @@ namespace App.Domain.Interfaces
     {
         void Crear(Asignaciones modelo);
         Task<Asignaciones> BuscaPorId(Guid id);
+        Task<Asignaciones> Busca_AyudaSocialUsuario(Guid idAyudaSocial, Guid idUsuario);
+        Task<IList<Asignaciones>> BuscaPorIdUsuario(Guid idUsuario);
     }
 }

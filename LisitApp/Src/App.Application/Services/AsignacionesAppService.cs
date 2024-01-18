@@ -1,7 +1,7 @@
-﻿using App.Application.EventSourcedNormalizers.Usuario;
-using App.Application.EventSourcedNormalizers;
+﻿using App.Application.EventSourcedNormalizers;
 using App.Application.Interfaces;
 using App.Application.ViewModels.Asignaciones;
+using App.Application.ViewModels.AyudasSociales;
 using App.Domain.Commands.Asignaciones.Commands;
 using App.Domain.Core.Mediator;
 using App.Domain.Core.Messaging;
@@ -43,9 +43,19 @@ namespace App.Application.Services
             return AsignacionesHistory.ToJavaScriptCustomerHistory(await _eventStoreRepository.All(id));
         }
 
+        public Task<AyudasSocialesViewModel> Busca_AyudaSocialUsuario(Guid idAyudaSocial, Guid idUsuario)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Dispose()
         {
             GC.SuppressFinalize(this);
+        }
+
+        public async Task<IList<AsignacionesViewModel>> BuscaPorIdUsuario(Guid idUsuario)
+        {
+            return _mapper.Map<IList<AsignacionesViewModel>>(await _asignacionesRepository.BuscaPorIdUsuario(idUsuario));
         }
     }
 }

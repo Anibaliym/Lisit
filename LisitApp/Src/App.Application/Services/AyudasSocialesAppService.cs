@@ -13,16 +13,14 @@ namespace App.Application.Services
     public class AyudasSocialesAppService : IAyudasSocialesAppService
     {
         private readonly IMapper _mapper;
-        private readonly IComunaRepository _comunaRepository;
         private readonly IAyudasSocialesRepository _ayudasSocialesRepository;
 
         private readonly IEventStoreRepository _eventStoreRepository;
         private readonly IMediatorHandler _mediator;
 
-        public AyudasSocialesAppService(IMapper mapper, IComunaRepository comunaRepository, IAyudasSocialesRepository ayudasSocialesRepository, IEventStoreRepository eventStoreRepository, IMediatorHandler mediator)
+        public AyudasSocialesAppService(IMapper mapper, IAyudasSocialesRepository ayudasSocialesRepository, IEventStoreRepository eventStoreRepository, IMediatorHandler mediator)
         {
             _mapper = mapper;
-            _comunaRepository = comunaRepository;
             _ayudasSocialesRepository = ayudasSocialesRepository;
             _eventStoreRepository = eventStoreRepository;
             _mediator = mediator;
@@ -47,6 +45,11 @@ namespace App.Application.Services
         public void Dispose()
         {
             GC.SuppressFinalize(this);
+        }
+
+        public Task<int> Busca_AnioAyudaSocial(Guid id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
